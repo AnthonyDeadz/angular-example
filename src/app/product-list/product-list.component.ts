@@ -9,4 +9,10 @@ import { productList } from '../mock/product.mock';
 })
 export class ProductListComponent {
   productList: productModel[] = productList;
+
+  addToCart(card: productModel): void {
+    //TODO: Make conection with the cart
+
+    console.log(`The card with id ${card.id} has been added to the cart`);
+  }
 }

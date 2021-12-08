@@ -17,15 +17,3 @@
   width: 200px;
   text-decoration-style: dashed;
 }
-
-.cards-container {
-  background: black;
-  position: relative;
-  display: flex;
-  top: 50px;
-  left: 3%;
-  width: 94%;
-  border: 1px solid white;
-  border-radius: 10px;
-  flex-wrap: wrap;
-}

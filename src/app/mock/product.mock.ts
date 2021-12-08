@@ -24,7 +24,7 @@ export const productList: productModel[] = [
 
   {
     id: 4,
-    img: '//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0214-N/JT1-0214-N-GREY-5-2.jpg',
+    img: '//henderson.ru.airee.cloud/uimages/catalog/product/JT1-0221-N/JT1-0221-N-LNAVY-5-2.jpg',
     name: 'Costume 4 - there is some kind of description',
     price: 499,
   },
