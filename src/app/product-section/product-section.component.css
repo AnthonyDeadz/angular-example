@@ -1,0 +1,31 @@
+/* Product part (part with cards): */
+.product-part {
+  color: white;
+  position: relative;
+  background-color: rgb(24, 24, 24);
+  height: 1600px;
+  width: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.header-text-product-part {
+  position: relative;
+  font-size: 35px;
+  left: 60px;
+  top: 30px;
+  width: 200px;
+  text-decoration-style: dashed;
+}
+
+.cards-container {
+  background: black;
+  position: relative;
+  display: flex;
+  top: 50px;
+  left: 3%;
+  width: 94%;
+  border: 1px solid white;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,61 @@
+.card {
+  background-color: rgb(44, 44, 44);
+  width: 25%;
+  height: 650px;
+  flex-basis: 21%;
+  margin: 2%;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px white;
+}
+
+.card-img {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.product-description {
+  background-color: rgb(77, 7, 7);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: -5px;
+}
+
+.product-description:hover {
+  background-color: rgb(102, 34, 34);
+}
+
+.product-name {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 7px;
+}
+
+.buy-button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin: 10px 10px;
+  font-size: 17px;
+  width: 43%;
+  font-weight: bold;
+}
+
+.buy-button:hover {
+  background-color: rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+.buy {
+  background: white;
+  color: black;
+  border: 1px solid rgb(77, 7, 7);
+}
