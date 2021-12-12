@@ -8,6 +8,8 @@ import { productModel } from '../models/product.model';
   styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent {
+  flag: boolean = false;
+  buttonTitle: string = 'Add to Cart';
   @Input() productCard: productModel;
   @Output() addedToCart: EventEmitter<productModel> =
     new EventEmitter<productModel>();
@@ -15,10 +17,11 @@ export class ProductCardComponent {
   addToCart(): void {
     this.addedToCart.emit(this.productCard);
 
-    // TODO: Figure out why doesn't work:
-    // const addButton: HTMLButtonElement = document.querySelector('.add-to-cart');
-
-    // addButton.classList.add('added');
-    // addButton.innerHTML = 'In Cart';
+    this.flag = !this.flag;
+    if (this.flag) {
+      this.buttonTitle = 'In Cart';
+    } else {
+      this.buttonTitle = 'Add to Cart';
+    }
   }
 }

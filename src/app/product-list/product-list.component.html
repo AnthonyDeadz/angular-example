@@ -1,35 +1,8 @@
 <!-- TODO: Add other cards! -->
 <div class="cards-container">
   <app-product-card
-    [productCard]="productList[0]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[1]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[2]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[3]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[4]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[5]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[6]"
-    (addedToCart)="addToCart($event)"
-  ></app-product-card>
-  <app-product-card
-    [productCard]="productList[7]"
+    *ngFor="let item of productList"
+    [productCard]="item"
     (addedToCart)="addToCart($event)"
   ></app-product-card>
 </div>
