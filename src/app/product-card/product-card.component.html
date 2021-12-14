@@ -14,7 +14,7 @@
         type="button"
         class="buy-button add-to-cart"
         (click)="addToCart()"
-        [ngClass]="{ added: flag }"
+        [ngClass]="{ added: IsProductInCart }"
       >
         {{ buttonTitle }}
       </button>

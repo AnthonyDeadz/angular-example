@@ -8,17 +8,18 @@ import { productModel } from '../models/product.model';
   styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent {
-  flag: boolean = false;
-  buttonTitle: string = 'Add to Cart';
   @Input() productCard: productModel;
   @Output() addedToCart: EventEmitter<productModel> =
     new EventEmitter<productModel>();
 
+  IsProductInCart: boolean = false;
+  buttonTitle: string = 'Add to Cart';
+
   addToCart(): void {
     this.addedToCart.emit(this.productCard);
 
-    this.flag = !this.flag;
-    if (this.flag) {
+    this.IsProductInCart = !this.IsProductInCart;
+    if (this.IsProductInCart) {
       this.buttonTitle = 'In Cart';
     } else {
       this.buttonTitle = 'Add to Cart';
