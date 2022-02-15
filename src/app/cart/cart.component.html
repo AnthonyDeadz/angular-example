@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div id="cart" class="cart">
+  <div *ngIf="cardsInCart.length; else emptyTemplate">
+    <div class="cart-container">
+      <app-cart-element
+        *ngFor="let item of cardsInCart"
+        [cartElement]="item"
+        (deletedFromCart)="deleteFromCart($event)"
+      ></app-cart-element>
+    </div>
+    <div class="info-container">
+      <div class="cart-title">Your Cart</div>
+      <div class="info">
+        <p class="amount-line">Amount of items:</p>
+        <p class="total-line">Total price: $</p>
+        <button class="buy-all-button">Buy All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #emptyTemplate>
+  <h3 class="empty-cart">Nothing is here yet!</h3>
+</ng-template>

@@ -11,10 +11,17 @@
     <div class="buttons-container">
       <button class="buy-button buy-now">Buy Now</button>
       <button
+        class="buy-button description-button"
+        onclick="window.location.href = '/description';"
+      >
+        Description
+      </button>
+      <button
         type="button"
         class="buy-button add-to-cart"
         (click)="addToCart()"
         [ngClass]="{ added: IsProductInCart }"
+        [disabled]="IsProductInCart"
       >
         {{ buttonTitle }}
       </button>

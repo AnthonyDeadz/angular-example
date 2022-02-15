@@ -3,4 +3,6 @@ export interface productModel {
   img: string;
   name: string;
   price: number;
+  description: string;
+  archived?: boolean;
 }

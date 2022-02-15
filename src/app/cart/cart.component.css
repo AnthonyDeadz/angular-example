@@ -1,0 +1,106 @@
+.cart {
+  background: url(https://www.zastavki.com/pictures/originals/2015/Creative_Wallpaper_A_man_in_a_suit_and_red_tie_098495_.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-container {
+  background: black;
+  overflow: auto;
+  max-height: 750px;
+  position: relative;
+  top: 150px;
+  left: 5%;
+  width: 110%;
+  border: 1px solid white;
+  justify-content: space-between;
+  color: white;
+}
+
+.info-container {
+  width: 300px;
+  height: 180px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+  position: relative;
+  left: 60%;
+  bottom: 60%;
+  position: fixed;
+}
+
+.info-container:hover {
+  box-shadow: 0 0 20px white;
+}
+
+.cart-title {
+  background-color: rgb(77, 7, 7);
+  border-radius: 15px 15px 0px 0px;
+  padding: 7px 0px 7px 15px;
+  font-size: 22px;
+}
+
+.info {
+  padding: 7px 0px 7px 15px;
+  font-size: 20px;
+}
+
+.amount-line {
+  margin-bottom: 10px;
+}
+
+.buy-all-button {
+  transition-duration: 0.2s;
+  margin-top: 15px;
+  width: 270px;
+  height: 35px;
+  font-size: 17px;
+  text-align: center;
+  border-style: none;
+  border-radius: 50px;
+  background-color: rgb(77, 7, 7);
+  color: white;
+}
+
+.buy-all-button:hover {
+  transition-duration: 0.2s;
+  margin-top: 12px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.empty-cart {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  height: 50px;
+}
+
+.cart-container::-webkit-scrollbar {
+  width: 17px;
+}
+
+.cart-container::-webkit-scrollbar-track {
+  background: rgb(185, 185, 185);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1) inset;
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 0, 0);
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.cart-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(129, 29, 29);
+}

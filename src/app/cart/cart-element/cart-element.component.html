@@ -1,0 +1,38 @@
+<div class="element-container">
+  <div class="card-container">
+    <img class="card-img" src="{{ cartElement.img }}" />
+    <div class="description-container">
+      <div class="name">{{ cartElement.name }}</div>
+      <div class="description">{{ cartElement.description }}</div>
+    </div>
+  </div>
+  <div class="options-container">
+    <div class="counter-container">
+      <button class="decrease-button amount-buttons" (click)="decrease()">
+        -
+      </button>
+      <input
+        type="text"
+        class="counter"
+        value="1"
+        data-price="1000"
+        maxlength="4"
+        disabled
+      />
+      <button class="increase-button amount-buttons" (click)="increase()">
+        +
+      </button>
+    </div>
+    <div class="price-container">
+      Price: $
+      {{ cartElement.price }}
+    </div>
+    <button
+      class="delete-from-cart-button"
+      type="button"
+      (click)="deleteFromCart()"
+    >
+      Delete from cart
+    </button>
+  </div>
+</div>

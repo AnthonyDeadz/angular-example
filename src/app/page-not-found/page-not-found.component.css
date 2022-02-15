@@ -1,0 +1,15 @@
+.page-not-found {
+  background: url(https://phonoteka.org/uploads/posts/2021-04/1619402267_33-phonoteka_org-p-fon-dlya-telefona-minimalizm-35.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.error-text {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  top: 650px;
+}

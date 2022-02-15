@@ -6,7 +6,6 @@
   left: 3%;
   width: 94%;
   border: 1px solid white;
-  border-radius: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
 }

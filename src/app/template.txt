@@ -93,3 +93,5 @@
   <script src="index.ts"></script>
   </body>
 </html>
+
+[routerLink]="['/home']"
